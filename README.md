@@ -19,11 +19,11 @@ $ vagrant ssh mg<br>
 $ cd awx/installer<br>
 $ vi inventory<br>
 以下をコメントアウト，ユーザとパスワードを任意のものに変更<br>
------<br>
-\admin_user=admin<br>
-\admin_password=password<br>
-\(略)<br>
-\project_data_dir=/var/lib/awx/projects
+
+admin_user=admin<br>
+admin_password=password<br>
+(略)<br>
+project_data_dir=/var/lib/awx/projects
 
 
 
