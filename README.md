@@ -20,7 +20,7 @@ $ vagrant up
 $ vagrant ssh mg
 認証情報を編集
 $ cd awx/installer
-$ vi inventory
+$ sudo vi inventory
 ```
 以下をコメントアウト，ユーザとパスワードを任意のものに変更<br>
 
@@ -35,5 +35,13 @@ AWXをインストール
 $ ansible-playbook -i inventory install.yml
 ```
 
+### Playbookの登録
+```
+Playbookファイルの移動
+$ cd ~
+$ sudo mv playbooks /var/lib/awx/projects/
 
-
+1.ブラウザで"http://localhost:4567/"を入力し，Web UIに移動（ユーザ名とパスワードはインストール前に決めたもの）．
+2.Projectsタブを選択，Addを選択すると，Create New Projectページが表示される．
+　Nameは任意，Source Control Credential Typeは「Manual」，Playbook Directoryは移動させた「playbooks」を選択．
+```
