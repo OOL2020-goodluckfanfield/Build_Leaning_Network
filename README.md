@@ -23,7 +23,7 @@ $ vi inventory<br>
 \admin_user=admin<br>
 \admin_password=password<br>
 \(略)<br>
-\project_data_dir=/var/lib/awx/projects<br>
+\project_data_dir=/var/lib/awx/projects
 -----
 
 
