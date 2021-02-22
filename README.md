@@ -13,6 +13,7 @@ $ cd Build_Leaning_Network<br>
 $ vagrant up
 ```
 ## ネットワーク設定の保存・復元機能の設定
+### AWXのインストール
 ```
 管理用サーバに接続
 $ vagrant ssh mg<br>
@@ -30,7 +31,8 @@ project_data_dir=/var/lib/awx/projects
 ```
 AWXをインストール
 ```
-ansible-playbook -i inventory install.yml
+$ ansible-playbook -i inventory install.yml
 ```
+
 
 
