@@ -3,7 +3,7 @@ OOL2020-goodluckfanfield
 
 ## 動作確認
 ・Vagrant<br>
-Installed Version: 2.2.10
+Installed Version: 2.2.10<br>
 ・VirtualBox<br>
 6.1.8r137981
 
@@ -16,7 +16,7 @@ $ vagrant up
 ```
 管理用サーバに接続
 $ vagrant ssh mg<br>
-
+認証情報を編集
 $ cd awx/installer
 $ vi inventory
 ```
@@ -27,6 +27,10 @@ admin_user=admin
 admin_password=password
 (略)
 project_data_dir=/var/lib/awx/projects
+```
+AWXをインストール
+```
+ansible-playbook -i inventory install.yml
 ```
 
 
