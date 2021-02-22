@@ -2,21 +2,22 @@
 OOL2020-goodluckfanfield
 
 ## 動作確認
-・Vagrant<br>
-Installed Version: 2.2.10<br>
-・VirtualBox<br>
+```
+・Vagrant
+Installed Version: 2.2.10
+・VirtualBox
 6.1.8r137981
-
+```
 ## 起動
 ```
-$ cd Build_Leaning_Network<br>
+$ cd Build_Leaning_Network
 $ vagrant up
 ```
 ## ネットワーク設定の保存・復元機能の設定
 ### AWXのインストール
 ```
 管理用サーバに接続
-$ vagrant ssh mg<br>
+$ vagrant ssh mg
 認証情報を編集
 $ cd awx/installer
 $ vi inventory
