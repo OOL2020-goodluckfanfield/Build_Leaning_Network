@@ -1,0 +1,24 @@
+---
+- hosts: vyos
+  gather_facts: false
+
+  tasks:
+    - name: backup file
+      vyos_command:
+       commands:
+        - show configuration commands
+      register: result
+
+    - name: show hostname
+      debug:
+       msg: "{{ inventory_hostname }}"
+
+    - name: mkdir
+      file:
+       path: "/tmp/backup/"
+       state: directory
+
+    - name: save to file
+      copy:
+       content: "{{ result.stdout[0] }}"
+       dest: "/tmp/backup/{{ inventory_hostname }}_config"
