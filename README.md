@@ -36,13 +36,54 @@ $ ansible-playbook -i inventory install.yml
 ```
 
 ### Playbookの登録
+管理用サーバでの作業
 ```
 Playbookファイルの移動
 $ cd ~
 $ sudo mv playbooks /var/lib/awx/projects/
 ```
+Web UIでの作業
 ```
-1.ブラウザで"http://localhost:4567/"を入力し，Web UIに移動（ユーザ名とパスワードはインストール前に決めたもの）．
-2.Projectsタブを選択，Addを選択すると，Create New Projectページが表示される．
-　”Name”は任意，”Source Control Credential Type”は”Manual”，”Playbook Directory”は移動させた”playbooks”を選択．
+1. ブラウザで"http://localhost:4567/"を入力し，Web UIに移動（ユーザ名とパスワードはインストール前に決めたもの）．
+2. Projectsタブを選択，”Add”を選択すると，Create ｎew projectページが表示される．
+3. ”Name”は任意，”Source Control Credential Type”は”Manual”，”Playbook Directory”は移動させた”playbooks”を選択．
+4. 
 ```
+### Inventoryの登録
+Web UIでの作業
+```
+1. Inventoriesタブを選択， ”Add Inventory”を選択すると，Create new inventoryページが表示される．
+2. ”Name”は任意
+3. ”Save”を選択
+4. Group detailsから”Groups”を選択，”Add”を選択すると，Create new groupページが表示される．
+5. ”Name”は任意，”Variables”に
+---
+ansible_network_os: vyos
+ansible_connection: network_cli
+と入力．
+6. ”Hosts”からAddを選択，Create new hostページが表示される．
+7. ”Name”は任意，”Variables”に
+---
+ansible_host: 10.10.0.20
+と入力．
+8.6，7の手順で”10.10.0.30”，”10.10.0.40”も登録する．
+```
+### Credentialの登録
+Web UIでの作業
+```
+1. Credentialsタブを選択， ”Add”を選択すると，Create New Credentialページが表示される．
+2. ”Name”は任意，Credential Typeは”Machine”を選択．
+3. Type Detailsが表示されるので，ユーザ名は”vagrant”，パスワードは”vagrant”を入力．
+4. ”Save”を選択．
+```
+
+
+
+
+
+
+
+
+
+
+
