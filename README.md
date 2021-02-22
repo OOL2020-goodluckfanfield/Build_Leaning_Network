@@ -4,12 +4,12 @@ OOL2020-goodluckfanfield
 # 動作確認
 ・Vagrant
 Installed Version: 2.2.10
-
+<br>
 ・VirtualBox
 6.1.8r137981
 
 # 起動
-$ cd Build_Leaning_Network\\
+$ cd Build_Leaning_Network<br>
 $ vagrant up
 
 # ネットワーク設定の保存・復元機能の設定
