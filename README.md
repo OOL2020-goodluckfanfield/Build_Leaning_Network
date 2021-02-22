@@ -40,8 +40,9 @@ $ ansible-playbook -i inventory install.yml
 Playbookファイルの移動
 $ cd ~
 $ sudo mv playbooks /var/lib/awx/projects/
-
+```
+```
 1.ブラウザで"http://localhost:4567/"を入力し，Web UIに移動（ユーザ名とパスワードはインストール前に決めたもの）．
 2.Projectsタブを選択，Addを選択すると，Create New Projectページが表示される．
-　Nameは任意，Source Control Credential Typeは「Manual」，Playbook Directoryは移動させた「playbooks」を選択．
+　”Name”は任意，”Source Control Credential Type”は”Manual”，”Playbook Directory”は移動させた”playbooks”を選択．
 ```
