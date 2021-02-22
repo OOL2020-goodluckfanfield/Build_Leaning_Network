@@ -68,6 +68,9 @@ ansible_connection: network_cli
 ansible_host: 10.10.0.20
 と入力．
 8.6，7の手順で”10.10.0.30”，”10.10.0.40”も登録する．
+9.”Details”から，”Groups”タブを選択，作成したGroupを選択し，”Hosts”タブへ移動．
+10.”Add existing host”を選択し，追加したhostすべてを選択する．
+11.”Save”を選択．
 ```
 ### Credentialの登録
 Web UIでの作業
