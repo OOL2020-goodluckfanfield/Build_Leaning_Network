@@ -89,11 +89,12 @@ Web UIでの作業
 3. ”Save”を選択．
 4. 同様の手順で”Playbook”を”restore.yml”にしたものを作成．
 ```
-### Templeteの実行
+### Templetesの実行
 ```
 Templatesタブを選択，作成したTemplateを選択し，”Launch Template”で実行．
+保存機能のtemplatesを実行すると設定のバックアップファイルが作成され，復元機能のtemplatesを実行するとバックアップファイルから設定が復元される．
 
-・バックアップについて
+・バックアップファイルの保存先
 管理用サーバで
 $ docker exec -i -t awx_task bash
 を実行し，コンテナ内へ
