@@ -1,6 +1,14 @@
 # Build_Leaning_Network
 OOL2020-goodluckfanfield
 
+## システム構成図
+・学習環境構築機能
+<img width="960" alt="build" src="https://user-images.githubusercontent.com/48373956/126906038-d04952ee-7c09-45ed-89a6-023a75f3d7e3.png">
+・設定保存機能
+<img width="960" alt="backup" src="https://user-images.githubusercontent.com/48373956/126905940-d00e9875-1fbd-4f94-bf07-4e1ec1b4697c.png">
+・設定復元機能
+<img width="960" alt="restore" src="https://user-images.githubusercontent.com/48373956/126906042-a095f06f-8226-42a1-8d64-74aade4c1f2c.png">
+
 ## 動作確認
 ```
 ・Vagrant
@@ -13,9 +21,6 @@ Installed Version: 2.2.10
 $ cd Build_Leaning_Network
 $ vagrant up
 ```
-## システム構成図
-保存機能
-<img width="960" alt="backup" src="https://user-images.githubusercontent.com/48373956/126905940-d00e9875-1fbd-4f94-bf07-4e1ec1b4697c.png">
 ## ネットワーク設定の保存・復元機能の設定
 ### AWXのインストール
 ```
