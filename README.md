@@ -14,7 +14,7 @@ $ cd Build_Leaning_Network
 $ vagrant up
 ```
 ## システム構成図
-### 保存機能
+保存機能
 <img width="960" alt="backup" src="https://user-images.githubusercontent.com/48373956/126905940-d00e9875-1fbd-4f94-bf07-4e1ec1b4697c.png">
 ## ネットワーク設定の保存・復元機能の設定
 ### AWXのインストール
